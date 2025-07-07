@@ -5,9 +5,10 @@
 % =======================================================================
 clear;clc; 
 
-script_path = '\\vs03\VS03-SandD-2\NEW\WakingBrain\Publication\Scripts\';
-data_path = '\\vs03\VS03-SandD-2\NEW\WakingBrain\Publication\Data\'; % To adapt
-fig_path = '\\vs03\VS03-SandD-2\NEW\WakingBrain\Publication\Figures\';
+project_path = '' % put the path to the root directory of this repository
+script_path = [project_path 'Scripts\'];
+data_path = [project_path 'Data\']; 
+fig_path = [project_path 'Figures\'];
 addpath(genpath(script_path))
 
 % -- Choose stage, figure (1=awakening, 2 = arousal) and load variables ----------------------------------------

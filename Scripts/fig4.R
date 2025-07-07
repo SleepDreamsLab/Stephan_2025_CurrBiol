@@ -14,7 +14,8 @@ rm(list=ls())
 gc()
 
 # ------ Loading libraries and custom functions ----------------------------
-setwd('/Users/contretemps/Library/CloudStorage/GoogleDrive-aurelie.m.stephan@gmail.com/My Drive/Post-Doc/Insomnia/Analysis/R_scripts/')
+path_project <- '' % set path to root directory of this repository
+setwd(paste0(path_project,'Scripts/Func/'))
 packages = c('ggplot2','readxl')  
 lapply(packages, require, character.only = TRUE)
 source('aggregate_mean_se.R')
@@ -23,7 +24,6 @@ source('aggregate_mean_se.R')
 save_fig = TRUE
 
 # ------ Read data ----------------------------
-path_project = '/Users/contretemps/Library/CloudStorage/GoogleDrive-aurelie.m.stephan@gmail.com/My Drive/Post-Doc/WakingBrain/Paper/current_draft/Accepted/Final_Submission/Git/'
 path_figure = paste0(path_project,'Figures/fig4/')
 path_data = paste0(path_project,'Data/data_sleepiness.RData')
 load(path_data)
