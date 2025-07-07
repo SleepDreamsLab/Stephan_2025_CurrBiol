@@ -5,9 +5,9 @@
 % =======================================================================
 clear;clc;
 
-project_path = '\\vs03\VS03-SandD-2\NEW\WakingBrain\Publication\'; % insert the path root path containing code, data and figures dir
+project_path = ''; % insert the path root path containing code, data and figures dir
 script_path = [project_path 'Scripts\'];
-data_path = [project_path 'Data\']; % To adapt
+data_path = [project_path 'Data\']; 
 fig_path = [project_path 'Figures\'];
 
 cd([script_path 'func/stuff_4_sm'])
