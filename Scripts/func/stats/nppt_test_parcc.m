@@ -1,7 +1,7 @@
 function [nppt_test_results, dummy_res] = nppt_test_parcc(data1, data2, type, NBRS, nPerm, tail, alpha, calpha)
 %% [nppt_test_results, dummy_res] = nppt_test_parcc(data1, data2, type, NBRS, nPerm, tail, alpha, calpha)
 % Permutation-based contrast analysis incorporating correction for multiple comparisons
-% Giulio Bernardi [giulioberna@gmail.com], 2018.01.24
+
     
     %% Data quality checks
     
