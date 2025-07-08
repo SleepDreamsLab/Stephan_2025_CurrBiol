@@ -88,7 +88,7 @@ for stage_idx = 1:length(stages)
                 fig_name = sprintf('%s_%s_%s_vs_%s_%s_%scolorbar', ...
                     stage, sw_param, cond1_label, cond2_label, ...
                     limits_str, colorbar_option);
-                print(fullfile(output_dir, fig_name), '-dpng', '-r300');
+                print(fullfile(output_dir, fig_name), '-depsc2');
             end
             close;
         end
