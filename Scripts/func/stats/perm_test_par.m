@@ -1,11 +1,10 @@
 function [real_res, p_real, s_real, h_real, t_real, dummy_res, dummy_hvs] = perm_test_par(data1, data2, type, tail, alpha, nPerm)
 %% [real_res, p_real, s_real, h_real, t_real, dummy_res, dummy_hvs] = perm_test_par(data1, data2, type, alpha, nPerm)
-% Giulio Bernardi [giulioberna@gmail.com], 2018.01.24
 
 disp('Calculation of real and null data values...');
 data=cat(1,data1,data2); nsub1=size(data1,1); nsub2=size(data2,1);
 switch type
-    case 'Paired' % Hypothesis: [data1–data2] comes from a distribution with zero median
+    case 'Paired' % Hypothesis: [data1â€“data2] comes from a distribution with zero median
         if nsub1~=nsub2; error('Number of subjects must be the same for a paired test!'); end;
         real_res=(nanmean(data1-data2,1))';
         [h_real, p_real, ~, stats]=ttest(data1,data2,'Alpha',alpha,'Tail',tail);
