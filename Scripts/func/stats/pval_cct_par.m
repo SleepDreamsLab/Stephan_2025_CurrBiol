@@ -1,6 +1,5 @@
 function [t_clust, h_real_cc] = pval_cct_par(h_real,s_real,dummy_hvs,NBRS,tail,calpha)
 %% [t_clust, h_real_cc] = pval_cct(h_real,s_real,dummy_res,NBRS,tail,alpha,calpha)
-% Giulio Bernardi [giulioberna@gmail.com], 2017.11.19
 % 
 % This function requires the surfing_clusterize function from the
 % surfing-master toolbox.
