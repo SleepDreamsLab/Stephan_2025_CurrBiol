@@ -1,6 +1,5 @@
 function [t_pcorr, h_real_pc] = pval_pct(real_res,dummy_res,tail,calpha)
 %% [t_pcorr, h_real_pc] = pval_pct(real_res,dummy_res,tail,calpha)
-% Giulio Bernardi [giulioberna@gmail.com], 2017.11.19
 
 disp('Calculation of p-based correction...');
 t_pcorr=NaN(1,2); h_real_pc=zeros(size(real_res));
